@@ -8,7 +8,7 @@ const toolbox = {
             contents: [
                 {
                     kind: "block",
-                    type: "controls_if",
+                    type: "controls_if"
                 },
                 {
                     kind: "block",
@@ -21,8 +21,27 @@ const toolbox = {
                 {
                     kind: "block",
                     type: "logic_negate"
+                },
+                {
+                    kind: "block",
+                    type: "logic_null"
+                },
+                {
+                    kind: "block",
+                    type: "logic_ternary"
                 }
             ],
+        },
+        {
+            kind: "category",
+            name: "Loops",
+            colour: "#5ba55b",
+            contents: [
+                {
+                    kind: "block",
+                    type: "controls_repeat_ext"
+                }
+            ]
         },
         {
             kind: "category",
