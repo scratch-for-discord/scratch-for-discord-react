@@ -35,7 +35,13 @@ function App() {
         scaleSpeed: 1.2
       },
       trashcan: true,
-      maxTrashcanContents: 0
+      maxTrashcanContents: 0,
+      move: {
+        scrollbars: true,
+        drag: true,
+        wheel: true
+      },
+      readOnly: false
     }}
     onWorkspaceChange={(workspace) => {
       setJavascriptCode(Blockly.JavaScript.workspaceToCode(workspace))

@@ -1,11 +1,3 @@
-// how about now can u see the site?
-// no
-// wait u r using vs code desktop right?
-// ye
-// i gave u write access try writing yarn start
-// how about now
-// nope lol
-// fuck i will just push it to github and u can build it locally ig
 const toolbox = {
     kind: "categoryToolbox",
     contents: [
