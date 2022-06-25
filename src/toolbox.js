@@ -7,12 +7,12 @@ const toolbox = {
             colour: "#5C81A6",
             contents: [
                 {
-                    kind: "block",
-                    type: "controls_if"
+                    kind: "controls_if",
+                    type: "block"
                 },
                 {
                     kind: "block",
-                    type: "logic_compare",
+                    type: "logic_compare"
                 },
                 {
                     kind: "block",
@@ -29,7 +29,7 @@ const toolbox = {
                 {
                     kind: "block",
                     type: "logic_ternary"
-                }
+                },
             ],
         },
         {
@@ -40,6 +40,36 @@ const toolbox = {
                 {
                     kind: "block",
                     type: "controls_repeat_ext"
+                },
+                {
+                    kind: "block",
+                    type: "controls_for",
+                    inputs: {
+                        FROM: {
+                            block: {
+                                type: "math_number",
+                                fields: {
+                                    NUM: 1
+                                }
+                            }
+                        },
+                        TO: {
+                            block: {
+                                type: "math_number",
+                                fields: {
+                                    NUM: 10
+                                }
+                            }
+                        },
+                        BY: {
+                            block: {
+                                type: "math_number",
+                                fields: {
+                                    NUM: 1
+                                }
+                            }
+                        },
+                    }
                 }
             ]
         },
@@ -49,8 +79,8 @@ const toolbox = {
             colour: "#5CA65C",
             contents: [
                 {
-                  kind: "block",
-                  type: "math_round",
+                    kind: "block",
+                    type: "math_round",
                 },
                 {
                   kind: "block",

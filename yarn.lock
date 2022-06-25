@@ -1076,11 +1076,6 @@
   resolved "https://registry.npmjs.org/@blockly/theme-dark/-/theme-dark-3.0.11.tgz#2f53af17ef53eeb296d97050cec72fee49d769a7"
   integrity sha512-R0WUM8iAlZ6pl05azp0GRWVUTJ6fJZvz4napje1P/zYYe8T0shxZswtr73CE5j62vRwR2snDdc12OE64yuohYw==
 
-"@blockly/theme-modern@^2.1.36":
-  version "2.1.36"
-  resolved "https://registry.npmjs.org/@blockly/theme-modern/-/theme-modern-2.1.36.tgz#6c305c177ebd0c1357585a58e1db3472d397bf4d"
-  integrity sha512-MaI8zxlJK1+VGRAw6N14s5IsGOXMAhWpHmDawT4GUb/Iph31zVgFRg5Wr5uRoWeFhKljhXx5ZciLwtnvSntJfg==
-
 "@csstools/normalize.css@*":
   version "12.0.0"
   resolved "https://registry.npmjs.org/@csstools/normalize.css/-/normalize.css-12.0.0.tgz#a9583a75c3f150667771f30b60d9f059473e62c4"
@@ -2811,7 +2806,14 @@ binary-extensions@^2.0.0:
   resolved "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==
 
-"blockly@>= 3.20200024.0", blockly@^8.0.3:
+blockly@8.0.2:
+  version "8.0.2"
+  resolved "https://registry.npmjs.org/blockly/-/blockly-8.0.2.tgz#d5fd1d724dad5bac8880c71d52994056c6ae5363"
+  integrity sha512-IVhgfb0I6XWwsLJZbtZHydJ2vX+Nu4V6bIn7tYLgDyaBfZQHcKeR3hVPnPbUi/n8+JTQA/a2AAey5qSIzwwBPw==
+  dependencies:
+    jsdom "15.2.1"
+
+"blockly@>= 3.20200024.0":
   version "8.0.3"
   resolved "https://registry.npmjs.org/blockly/-/blockly-8.0.3.tgz#a59e5b727843115c6962a2c60759929e91d5cab0"
   integrity sha512-6sufD+HiKjLk8BtF/mAZagnwr41TQqcj74W1m+qB4pFttXrSWiSsWRsBnJYRMxuAO7iuLcehaQhBbCs3LkoLVw==
@@ -7346,7 +7348,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-"prop-types@>= 15.6.0", prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7441,13 +7443,13 @@ react-app-polyfill@^3.0.0:
     regenerator-runtime "^0.13.9"
     whatwg-fetch "^3.6.2"
 
-react-blockly@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.npmjs.org/react-blockly/-/react-blockly-7.0.1.tgz#4d01aa629c94da04ceecd737ede048aa7216bb25"
-  integrity sha512-Lsteh2KmCjwMk/bRFPFTEnc0ylpgseLC1S9S/fs8kE8vnABJFq385G9X+WHtJ8Txpd/YhODdIhZ+rlU4EavasA==
+react-blockly@7.0.0-alpha.1:
+  version "7.0.0-alpha.1"
+  resolved "https://registry.npmjs.org/react-blockly/-/react-blockly-7.0.0-alpha.1.tgz#e5de441e6d74103eb4dd7578bdd53863b8c782b1"
+  integrity sha512-y/sADUkW+uHi/vOhyRmvA8/B71jQ7aGf7Tfu7KpSb7BwLGuNVWRr96PEbefw6R5C145ozrOLAyVr/j4X3Z3lrQ==
   dependencies:
     blockly ">= 3.20200024.0"
-    prop-types ">= 15.6.0"
+    prop-types "^15.7.2"
 
 react-dev-utils@^12.0.1:
   version "12.0.1"
