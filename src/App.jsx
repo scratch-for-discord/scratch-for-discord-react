@@ -41,7 +41,7 @@ function App() {
     }
   }, [])
   return (
-    <div ref={blocklyParent} id="blocklyDiv"></div>
+    <div ref={blocklyParent} id="blocklyParent"></div>
   );
 }
 

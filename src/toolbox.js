@@ -7,8 +7,8 @@ const toolbox = {
             colour: "#5C81A6",
             contents: [
                 {
-                    kind: "controls_if",
-                    type: "block"
+                    kind: "block",
+                    type: "controls_if"
                 },
                 {
                     kind: "block",
