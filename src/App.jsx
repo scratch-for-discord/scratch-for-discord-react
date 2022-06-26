@@ -3,7 +3,6 @@ import { useRef, useEffect } from 'react';
 import toolbox from './toolbox';
 import DarkTheme from "@blockly/theme-dark";
 import Blockly from 'blockly'
-let workspace;
 function App() {
   const blocklyParent= useRef(null)
   useEffect(() => {
@@ -12,7 +11,7 @@ function App() {
     blocklyDiv.classList.add('w-full')
     blocklyParent.current.append(blocklyDiv)
 
-    workspace = Blockly.inject(blocklyDiv, {
+    let workspace = Blockly.inject(blocklyDiv, {
       toolbox: toolbox,
       theme: DarkTheme,
       renderer: 'zelos',
