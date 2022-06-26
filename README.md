@@ -1,15 +1,7 @@
 # Deploying the site
 
-Use the command `npm install` or `yarn install` then use `npm run build` or `yarn build`
-
-Use a package such as `serve` to deploy the site locally
-
-## Example using serve
-
-1. `npm run build` or `yarn build`  
-2. `npm i -D serve` or `yarn add -D serve`  
-3. `serve -s build`  
-4. Go to http://localhost:3000
+Use the command `npm install` or `yarn install` then use `npm run build` or `yarn build`  
+This should create a `build` folder. After the `build` folder is created, you can use `yarn serve` or `npm run serve` to serve your site
 
 # Help wanted!
 
