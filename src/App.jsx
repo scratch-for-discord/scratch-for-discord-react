@@ -8,8 +8,8 @@ function App() {
   const blocklyParent= useRef(null)
   useEffect(() => {
     const blocklyDiv = document.createElement('div')
-    blocklyDiv.classList.add('h-screen')
-    blocklyDiv.classList.add('w-screen')
+    blocklyDiv.classList.add('h-full')
+    blocklyDiv.classList.add('w-full')
     blocklyParent.current.append(blocklyDiv)
 
     workspace = Blockly.inject(blocklyDiv, {
@@ -42,7 +42,7 @@ function App() {
     }
   }, [])
   return (
-    <div ref={blocklyParent} id="blocklyParent"></div>
+    <div ref={blocklyParent} id="blocklyParent" className="w-screen h-screen"></div>
   );
 }
 
